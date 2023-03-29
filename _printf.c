@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 void print_buffer(char buffer[], int *buff_ind);
 
@@ -32,7 +31,6 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-<<<<<<< HEAD
 			print_buffer(buffer, &buff_ind);
 			flags = get_flags(format, &i);
 			width = get_width(format, &i, list);
@@ -44,11 +42,6 @@ int _printf(const char *format, ...)
 			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
-=======
-			putchar(*format);
-			printed++;
-			format++;
->>>>>>> ceaff9132b19dc5bdd1c11b67049e3a2b42f3182
 		}
 	}
 
