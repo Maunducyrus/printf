@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _printf - implementation of the inbuilt printf
@@ -24,7 +25,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(*format);
+			putchar(*format);
 			printed++;
 			format++;
 		}
